@@ -1,0 +1,22 @@
+md-sidenav{
+  width: 320px;
+}
+.container{
+  height: 100vh;
+}
+.secondary{
+  font-size: 0.75rem;
+  display: block;
+  color: #dddddd;
+  font-weight: 300;
+}
+.menu-list{
+  padding: 1rem;
+}
+.list-icon{
+  padding: 0.25rem 0.75rem;
+}
+.active {
+  color: darkviolet;
+  font-weight: bold;
+}

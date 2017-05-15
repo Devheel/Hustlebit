@@ -1,3 +1,33 @@
-<h1>
-  {{title}}
-</h1>
+<div fxLayout="column" fxFlexFill>
+
+  <md-toolbar color="primary">
+    <button md-icon-button (click)="sidenav.toggle()">
+      <md-icon>menu</md-icon>
+    </button>
+    <span>Working For BitCoins</span>
+  </md-toolbar>
+
+  <md-sidenav-container>
+    <md-sidenav #sidenav>
+      <md-nav-list fxLayout="column">
+        <a md-list-item *ngFor="let view of views" class="menu-list" routerLinkActive="active"[routerLink]="view.link" (click)="sidenav.close()" fxLayout="row">
+          <md-icon md-list-icon class="list-icon">{{view.icon}}</md-icon>
+          <div>
+          <span md-line>{{view.name}}</span>
+          <span md-line class="secondary">{{view.description}}</span>
+          </div>
+        </a>
+      </md-nav-list>
+    </md-sidenav>
+    <div class="container">
+    <router-outlet></router-outlet>
+    </div>
+  </md-sidenav-container>
+
+
+</div>
+
+
+
+
+
