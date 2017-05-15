@@ -1,0 +1,20 @@
+.container{
+  margin: 1rem;
+}
+.job-details{
+  height: 120px;
+  width: 100px;
+  margin: 0 2rem 0  0;
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.1);
+}
+.open-job{
+ background-color: #00e676;
+  color: white;
+}
+.closed-job{
+  background-color: #E13137;
+  color: white;
+}
+md-card{
+  cursor: pointer;
+}

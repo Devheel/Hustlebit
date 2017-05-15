@@ -1,0 +1,19 @@
+<div class="container" fxLayout="column" fxLayoutGap="1rem">
+  <md-card *ngFor="let job of jobs" (click)="toTheDetailsPage(job.id)">
+    <md-card-header>
+      <div class="job-details" fxLayout="column" fxLayoutAlign="center center" [ngClass]="{'open-job' : job.isOpen , 'closed-job': !job.isOpen}">
+       <h3 >{{job.prize}} BTC</h3>
+        <p>{{job.bids}} Bids</p>
+      </div>
+      <div>
+        <md-card-title>{{job.title}}</md-card-title>
+        <md-card-subtitle>Website, Posted {{job.postedOn}} <br/>By: {{job.postedBy}}</md-card-subtitle>
+        <md-chip-list *ngIf="job.tags">
+          <md-chip color="primary" selected="true" > {{ job.tags[0] }} </md-chip>
+          <md-chip color="accent" selected="true" > {{ job.tags[1] }} </md-chip>
+          <md-chip color="warn" selected="true" > {{ job.tags[2] }} </md-chip>
+        </md-chip-list>
+      </div>
+    </md-card-header>
+  </md-card>
+</div>
