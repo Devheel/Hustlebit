@@ -21,6 +21,6 @@ export class HomeComponent implements OnInit {
     this.getJobs();
   }
   toTheDetailsPage(id) {
-    this.router.navigate(['job'], id);
+    this.router.navigate([`job/${id}`]);
   }
 }
