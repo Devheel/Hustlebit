@@ -1,3 +1,3 @@
 export let GONFIG = {
-  jobs: '../api/jobs.json'
+  jobs: 'api/jobs.json'
 };

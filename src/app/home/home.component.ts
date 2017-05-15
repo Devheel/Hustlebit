@@ -17,7 +17,9 @@ export class HomeComponent implements OnInit {
       this.jobs = jobs;
     });
   }
-  ngOnInit() {  }
+  ngOnInit() {
+    this.getJobs();
+  }
   toTheDetailsPage(id) {
     this.router.navigate(['job'], id);
   }

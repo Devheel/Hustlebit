@@ -16,6 +16,10 @@ import { SearchComponent } from './search/search.component';
 import { ProfileComponent } from './profile/profile.component';
 import { JobDetailsComponent } from './job-details/job-details.component';
 import { BackendMockingService } from 'app/backend-service/backend-mocking.service';
+import { ExceptionService } from './core/exception.service';
+import { ToastService } from 'app/core/toast.service';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryStoreService } from '../api/in-memory-store.service';
 
 @NgModule({
   declarations: [
@@ -31,12 +35,13 @@ import { BackendMockingService } from 'app/backend-service/backend-mocking.servi
     BrowserModule,
     FormsModule,
     HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryStoreService),
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
     AppRoutingModule,
   ],
-  providers: [BackendMockingService],
+  providers: [BackendMockingService, ExceptionService, ToastService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
