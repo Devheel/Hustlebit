@@ -28,4 +28,10 @@ export class BackendMockingService {
       .catch(this.exceptionService.catchBadResponse);
     // TODO end the spinner here by calling finnaly on the observable
   }
+  getJob(id) {
+    return <Observable<JobInterface>>this.http
+      .get(`${url}/${id}`)
+      .map(res => this.extractData<JobInterface>(res))
+      .catch(this.exceptionService.catchBadResponse);
+  }
 }

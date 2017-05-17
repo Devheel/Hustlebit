@@ -13,6 +13,7 @@ export class InMemoryStoreService implements InMemoryDbService {
         'ends': '30/11/2017',
         'prize': 50,
         'isOpen': true,
+        'description': 'this is a simple full website design job that will take an average 2 to 3 months to complete and will be using angular 4 along side with a firebase backend',
         'tags': {
           '0': 'Coding',
           '1': 'Design',
@@ -29,6 +30,7 @@ export class InMemoryStoreService implements InMemoryDbService {
         'ends': '30/11/2018',
         'prize': 350,
         'isOpen': false,
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis purus neque. Cras tincidunt sit amet ex non rhoncus. Vestibulum facilisis aliquam ligula at pulvinar. In finibus sem sed auctor faucibus. Morbi molestie, augue at volutpat viverra, tellus erat ',
         'tags': {
           '0': 'Full Stack',
           '1': 'TypeScript',
