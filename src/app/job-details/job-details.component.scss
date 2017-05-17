@@ -9,5 +9,25 @@ md-card {
   md-chip-list md-chip{
     margin-bottom: 1rem;
   }
+  .price-info{
+    height: 100px;
+    width: 100px;
+    background-color: lightsteelblue;
+  }
+  .job-details{
+    box-shadow: 0 0 15px 1px rgba(0,0,0,0.1);
+  }
+  .open-job{
+    background-color: #00e676;
+    color: white;
+  }
+  .closed-job{
+    background-color: #E13137;
+    color: white;
+  }
+
+  md-card-header{
+    width: 100%;
+  }
 
 }
